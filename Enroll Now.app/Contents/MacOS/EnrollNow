@@ -1,0 +1,4 @@
+#!/bin/zsh
+currentuser=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }')
+userid=$(id -u "$currentuser")
+osascript -e "do shell script \"launchctl asuser $userid profiles -N\" with administrator privileges"
