@@ -8,6 +8,8 @@ Just executing the script or using osascript do shell script didn't work and gav
 
 You can send this Small app via e.g. E-Mail to your users after you selected an already setup device in Jamf Pro in a PreStage enrollment. The app practically triggers "profiles -N" to start the enrollment process.
 
+## Sign and notarize the app before use otherwise the user has manually approve everything :(
+
 1. Select an already setup device in jamf pro (no wipe required!)
 
 <img width="2171" height="344" alt="Screenshot 2025-07-25 at 15 18 56" src="https://github.com/user-attachments/assets/2103b6c4-40cb-4563-9d01-6cde700a8fca" />
