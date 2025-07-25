@@ -1,5 +1,11 @@
 # EnrollNow
 
+I wanted to enroll all device at my organization without wiping. This is possible by registering the devices to DEP via your Apple Dealer. You are then able to assign the devies to a PreStage enrollment.
+The enrollment will happen at some point then and you can trigger it with "sudo profiles renew enrollment" or "sudo profiles -N". I wanted my user to be informed via E-Mail but I didn't want them to wait 
+for the enrollment happen automatically and I didn't want them to have to open the Terminal and enter the command. Therefore I created this small app. "launchctl asuser" was the only way to get this to work
+
+Just executing the script or using osascript do shell script didn't work and gave me an "DEP enrollment (null) error"
+
 You can send this Small app via e.g. E-Mail to your users after you selected an already setup device in Jamf Pro in a PreStage enrollment. The app practically triggers "profiles -N" to start the enrollment process.
 
 1. Select an already setup device in jamf pro (no wipe required!)
